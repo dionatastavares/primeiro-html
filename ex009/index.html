@@ -4,29 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formatações</title>
+    <title>Listas</title>
+    <style>
+
+        body{
+            background-color: thistle;
+        }
+        h1{
+            background-color: seagreen;
+            
+    }
+        ol{
+            background-color: rgb(118, 118, 204);
+            color: white;
+        }
+
+        h2{
+            background-color: red;
+
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Outras formatações</h1>
-    <h2>Código-fonte</h2>
-    <p>O comando <code>document.getElementById('Teste')</code> é escrito em linguagem JavaScript.</p>
-    <pre>
-        <code>
-            num = int(input('Digite um número'))
-            if num % 2 == 0;
-                print(F'O número {num} é PAR')
-            else
-        </code>
-    </pre>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+
+    <!--
+    1 - Acordar
+    2 - Ligar para João
+    2 - Tomar café
+    3 - Escovar os dentes
+    4 - Lavar roupa
     
-    <h2>Citações</h2>
-    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p>
-    <h2>Citações Completas</h2>
-    <p>Segundo Jeff Noble, no seu livro HTML para Leigos:
-        <blockquote cite="">o computador é um burro muito rápido</blockquote>
-    </p>
-    <h2>Abreviações</h2>
-    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e CSS. Estou adorando!</p>
-    <h2>Texto Invertido</h2>
+    Exemplo de lista a ser alterada
+    -->
+    <img src="Lista.jpg" alt="Lista de compras">
+    <ol type="1"> <!-- 1, A, a I, i -->
+        <li>Acordar</li>
+        <li>Ligar para o João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para a casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <h2>Lista não ordenadas</h2>
+    <ul type="square" > <!-- disc, circle, square -->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Alface</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+
+        <h2>Minhas linguagens favoritas</h2>
+        
+        <ul>
+            <li>Antigas</li>
+                <ol type="A">
+                    <li>Clipper</li>
+                    <li>Fortran</li>
+                    <li>Fortran</li>
+                    <li>Delphi</li>
+                </ol>
+            <li>Novas</li>
+                <ol type="A" start="5">
+                    <li>PHP</li>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>Kotlin</li>
+
+                </ol>
+        </ul>
+
+    </ul>
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+        <li>NES</li>
+            <ol>
+                <li>Não sei</li>
+            </ol>
+        <li>SNES</li>
+        <li>PLAYSTAION</li>
+    </ol>
+    <h2>Lista de definições</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de macação de conteudo de um site</dd>
+    </dl>
 </body>
 </html>
